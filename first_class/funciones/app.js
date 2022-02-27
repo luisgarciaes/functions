@@ -1,14 +1,17 @@
-function greet(){
+let greet = () =>{
     console.log('Hello');
 }
 greet();
 
-function logGreeting(fn) {
+let logGreeting = (fn) => {
     fn()
 };
+
 logGreeting(greet);
 
-let greetMe=function() {
+let greetMe = () => {
     console.log('Hola desde la expresion de función')
 };
 greetMe();
+
+logGreeting(greetMe);
